@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="signup.css">
+
+<body>
+
+  
+<form id="serReqForm" action="" onsubmit="return validateForm()" method="post" required>
+
+    
+  <div class="tab"><b>Who are you?</b>
+ <p><select name="signup-as" id="signup-as" required>
+    <option value="" disabled selected hidden>select user type</option>
+    <option value="Customer">I'm a Customer</option>
+    <option value="Service-pro">I'm a Service provider</option>
+    </select>
+ </p>
+  </div>
+
+  <div class="tab"><b>What service(s) do you provide?</b>
+    <p>Ensure you pick all related services (e.g. as an Appliance repairer, pick washing machine, Air conditioner etc.)</p>
+  </div>
+   
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+
+
+<div class="container">
+  <div class="filterDiv cars">
+  <input type="checkbox" id="BMW" name="BMW" value="BMW">BMW</div>
+
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars">Ford</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+
+</div>
+
+
+  
+    <!-- One "tab" for each step in the form: 
+     
+What service do you provide?
+Make sure you select all related services (e.g. as a makeup artist, select bridal makeup, wedding makeup, photoshoot makeup etc.)
+
+Enter your business name
+
+What is your business type?
+Registered company
+Private person
+
+Where is your business located?
+Address
+City/Area
+State
+
+Describe the services you provide
+
+Your qualifications
+
+When was your business founded?
+
+How many employees do you have?
+E.g. 10
+How many kilometers can you travel for work?
+60
+I can travel within 60 kilometers of my business.
+
+Upload a profile photo
+Upload a photo that clearly shows your face. Customers trust a face more than a logo.
+
+Email address
+Enter your email address 
+Confirm email address
+Confirm your email address
+Name
+First
+First
+Last
+Last
+Username
+callafix
+Phone number
+Enter your phone number
+Confirm phone number
+Confrim your phone number
+Password
+••••••••••••••
+Subscribe
+I'd like to receive VisCorner News and Tips
+Terms of service
+I agree to the Terms of Service
+
+        
+    
+    
+   
+  <div class="tab">
+
+  
+    <h5>Ensure to provide accurate information.</h5>
+   </div>
+
+
+
+
+
+********************************
+
+<style>
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+<body>
+
+<h2>Filter DIV Elements</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv cars">BMW</div>
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars">Ford</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+*******************************************
+
+
+ -->
+    <div class="tab"><b>Which State do you offer your Services?</b>
+ 
+<select name="states" required id="states" oninput="this.className = ''">
+  
+<option value="" disabled selected hidden>select location</option>
+<option value="Abia">Abia</option>
+<option value="Abuja">Abuja</option>
+<option value="Adamawa">Adamawa</option>
+<option value="Akwa Ibom">Akwa Ibom</option>
+<option value="Anambra">Anambra</option>
+<option value="Bauchi">Bauchi</option>
+<option value="Bayelsa">Bayelsa</option>
+<option value="Benue">Benue</option>
+<option value="Borno">Borno</option>
+<option value="Cross River">Cross River</option>
+<option value="Delta">Delta</option>
+<option value="Ebonyi">Ebonyi</option>
+<option value="Edo">Edo</option>
+<option value="Ekiti">Ekiti</option>
+<option value="Enugu">Enugu</option>
+<option value="Gombe">Gombe</option>
+<option value="Imo">Imo</option>
+<option value="Jigawa">Jigawa</option>
+<option value="Kaduna">Kaduna</option>
+<option value="Kano">Kano</option>
+<option value="Katsina">Katsina</option>
+<option value="Kebbi">Kebbi</option>
+<option value="Kogi">Kogi</option>
+<option value="Kwara">Kwara</option>
+<option value="Lagos">Lagos</option>
+<option value="Nasarawa">Nasarawa</option>
+<option value="Niger">Niger</option>
+<option value="Ogun">Ogun</option>
+<option value="Ondo">Ondo</option>
+<option value="Osun">Osun</option>
+<option value="Oyo">Oyo</option>
+<option value="Plateau">Plateau</option>
+<option value="Rivers">Rivers</option>
+<option value="Sokoto">Sokoto</option>
+<option value="Taraba">Taraba</option>
+<option value="Yobe">Yobe</option>
+<option value="Zamfara">Zamfara</option>
+      
+</select>  
+
+<p><input placeholder="Enter your address..." oninput="this.className = ''"></p>
+ </div>
+
+    <!--   *******************************************************    -->
+
+    <div id="HowSoon-box" class="tab"><b>How soon do you need the Service?</b>
+      
+      <div class="asap-box">
+       <p>         
+        <input type="radio" id="asap" name="text" value="asap" >
+        <label for="asap">As soon as possible</label>
+        </p>
+     </div>
+
+
+      <br></br>
+
+      <p><input type="radio" id="date" name="text" value="date" >
+        <label for="date">On a specific date</label>
+        <input type="date" id="date" value="date" ></p>
+        
+      </div>
+
+
+    <div class="tab">Please provide your WhatsApp Contact:
+      <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+    </div>
+    
+    <div class="tab">Birthday:
+      <p><input placeholder="dd" oninput="this.className = ''"></p>
+      <p><input placeholder="mm" oninput="this.className = ''"></p>
+      <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+    </div>
+    
+    <div class="tab">Login Info:
+      <p><input placeholder="Username..." oninput="this.className = ''"></p>
+      <p><input placeholder="Password..." oninput="this.className = ''"></p>
+    </div> 
+    
+    <div class="NextNPrev-box" style="overflow:auto;">
+      <div style="float:right;">
+        <button class="Prev-box" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button class="Next-box" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+    
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+    
+    </form>
+    
+    <script src="appointment.js"></script>
+
+    </body>
+    </html>

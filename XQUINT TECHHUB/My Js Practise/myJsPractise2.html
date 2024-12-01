@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng">
+<title>Rock | Paper | Scissor Game</title>
+
+<!--GAME RULES
+Rock wins Scissor
+Paper wins Rock
+Scissor wins Paper
+***********
+
+GAME ALGORITHM
+-Onclick of button (Rock, paper or scissor)
+-Computer makes a random move
+-Compare moves
+-Display result as popup
+-->
+
+<body>
+
+
+    <div style="margin: 40px"></style>
+        <h4>Rock | Paper | Scissor Game</h4>
+
+ 
+<input onkeydown="
+   playGame('Rock');
+"></button>
+
+<button onclick="
+    playGame('Paper');
+">Paper</button>
+
+<button  onclick="
+    playGame('Scissor');
+">Scissor</button>
+
+<button  onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score['ties'] = 0; //another way to call an object
+">Reset score</button>
+
+<button  onclick="
+    functionTester();
+">function Tester</button>
+
+</div>
+</body>
+<script>    
+
+</script> 
+
+
+</html>
+
+
