@@ -1,0 +1,131 @@
+<div class="content-section">
+
+    
+     <div class="container">
+      <header>
+        <h1>Request Management</h1>
+      </header>
+      
+      <!-- Permissions Section -->
+      <section id="permissions">
+        <h2>Permissions</h2>
+        <ul>
+          <li><input type="checkbox" id="viewTasks"> View Tasks</li>
+          <li><input type="checkbox" id="editTasks"> Edit Tasks</li>
+          <li><input type="checkbox" id="archiveTasks"> Archive Tasks</li>
+          <li><input type="checkbox" id="assignTasks"> Assign Tasks</li>
+        </ul>
+      </section>
+      
+      <!-- Task Filters Section -->
+      <section id="task-filters">
+        <h2>Task Filters</h2>
+        <label for="viewTasksDropdown">View by: </label>
+        <select id="viewTasksDropdown">
+          <option value="tasksCreatedByMe">Tasks Created By Me</option>
+          <option value="myTasks">My Tasks</option>
+          <option value="allTasks">All Tasks</option>
+          <option value="archived">Archived</option>
+        </select>
+        
+        <label for="statusDropdown">Status: </label>
+        <select id="statusDropdown">
+          <option value="open">Open</option>
+          <option value="assigned">Assigned</option>
+          <option value="ongoing">Ongoing</option>
+          <option value="completed">Completed</option>
+          <option value="closed">Closed</option>
+        </select>
+        
+        <label for="groupBy">Group by: </label>
+        <select id="groupBy">
+          <option value="label">Label</option>
+          <option value="date">Date</option>
+        </select>
+        
+        <label for="searchInput">Search: </label>
+        <input type="text" id="searchInput" placeholder="Search tasks...">
+        
+        <button id="exportButton">Export</button>
+        <button id="addTaskButton">+ Add Task</button>
+      </section>
+      
+      <!-- Tasks List Section -->
+      <section id="task-list">
+        <h2>Tasks</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Request ID</th>
+              <th>Service Requested</th>
+              <th>Status</th>
+              <th>Assigned To</th>
+              <th>Start Date</th>
+              <th>Due Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="taskTableBody">
+            <!-- Dynamic rows will go here -->
+          </tbody>
+        </table>
+      </section>
+      
+      <!-- Task Detail Modal -->
+      <div id="taskDetailModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Task Details</h2>
+          <form id="taskDetailsForm">
+            <label for="requestId">Request ID: </label>
+            <input type="text" id="requestId" readonly>
+            
+            <label for="timestamp">Timestamp: </label>
+            <input type="text" id="timestamp" readonly>
+            
+            <label for="serviceRequested">Service Requested: </label>
+            <input type="text" id="serviceRequested" readonly>
+            
+            <label for="state">State: </label>
+            <input type="text" id="state">
+            
+            <label for="lga">LGA: </label>
+            <input type="text" id="lga">
+            
+            <label for="date">Date: </label>
+            <input type="date" id="date">
+            
+            <label for="descpt">Description: </label>
+            <textarea id="descpt"></textarea>
+            
+            <label for="upload">Upload File: </label>
+            <input type="file" id="upload">
+            
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+            
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone">
+            
+            <label for="assignedTo">Assigned To: </label>
+            <select id="assignedTo">
+              <option value="johnDoe">John Doe</option>
+              <option value="janeSmith">Jane Smith</option>
+              <option value="alexTurner">Alex Turner</option>
+            </select>
+            
+            <button type="button" id="reassignButton">Reassign Task</button>
+            <button type="button" id="sendReminderButton">Send Reminder</button>
+            
+            <button type="submit">Save Task</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  
+    
+    <script src="/callafix-admin-dashboard/assets/js/requests.js"></script>
+
+</div>
+

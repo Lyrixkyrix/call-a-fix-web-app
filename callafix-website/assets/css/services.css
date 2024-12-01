@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+/***** defaul styling *****/
+
+* {
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: "Aldrich", sans-serif;
+
+
+}
+
+html {
+
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 1.4;
+    /*line-height: 150px;*/
+
+}
+h2 {
+    font-size: 46px;
+    line-height: 1.2;
+    /*line-height: 54px;*/
+
+}
+h3 {
+    font-size: 40px;
+    
+}
+h4 {
+    font-size: 35px;
+    
+}
+
+h5 {
+    font-size: 24px;
+}
+
+
+h6 {
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0px 0 0px 0;
+    padding: 5px;
+
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+ /***** section styling *****/
+
+
+
+/***** body styling *****/
+
+
+body {
+    /*background-color: rgb(255, 255, 255);*/
+    font-size: 14px;
+    width: 100%;
+}
+   
+
+
+
+   
+/***** header, nav, ttttttttttttttttttttttttttttttttttttt *****/
+
+
+#header {
+    height: 60px;
+    width: 90vw;
+    background-color: white;
+    opacity: 90%;
+    border-radius: 10px;
+ /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.205);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    padding: 1% 30px; 
+    position: fixed;
+    z-index: 1;
+    top: 5px;
+    gap: 30px;
+}
+#Login-button {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 154, 0, 1); 
+}
+#Login-button:hover,
+#Login-button:active {
+    color: rgba(25, 115, 167, 1)
+}
+#user-icon {
+   font-size: 18px;
+}
+#Login-button h3 {
+    padding: 0 1px;
+    font-size: 16px;
+}
+#login-icon {
+    font-size: 18px;
+    rotate: 270deg;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center; 
+    gap: 30px; 
+    position: relative;
+}
+#logo-icon #Home-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+    color: rgba(25, 115, 167, 1);  
+}
+#logo-icon #Home-icon:hover,
+#logo-icon #Home-icon:active {
+    color: rgba(25, 115, 167, 1);      
+}
+#logo-icon .callafix-logo {
+    width: 70px;   
+    height: auto;
+    margin-top: -5px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+#logo-icon #call-icon {
+    rotate: 45deg;
+    margin-right: -3px;
+    font-size: 25px;
+    color:rgba(25, 115, 167, 1);   
+}
+#logo-icon #tools-icon {
+    font-size: 25px;
+    color: rgba(25, 115, 167, 1);       
+}
+.nav-list .home-text {
+    font-size: 16px;
+    color: rgba(25, 115, 167, 1);   
+}
+.nav-list li a {
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    color: black;    
+}
+.nav-list li a:hover,
+.nav-list li a:active {
+    color: rgba(25, 115, 167, 1);
+    font-size: 14px;
+}
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+}  
+.dropdown-content a:hover {
+    background-color: #ffffff;
+}  
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}  
+.dropdown-container:hover .dropdown-btn {
+    background-color:none;   
+}
+.nav-list button {
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    color: black;
+    background-color: inherit;
+    border: none;
+}
+#servicepro-btn {
+    color: rgba(255, 154, 0, 1); 
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+#servicepro-btn:hover {
+    color: rgba(25, 115, 167, 1);
+    font-size: 18px;
+}
+.menu-icon {
+   display: none;
+}
+  
+  
+/***** Hero section **********************/
+.featuresContainer h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.featuresContainer span {
+    color: rgba(25, 115, 167, 1);
+}
+.citylist span {
+    color: rgba(25, 115, 167, 1);
+}
+
+
+/* General styling for the hero section */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+/* Hero section background (map-container) */
+.hero-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;    
+}
+
+
+/* Map container as the background */
+.map-container {
+    position: relative;
+    flex: 1;
+    background: url('https://maps.googleapis.com/maps/api/staticmap?center=6.49018361998059,3.3025998785030137&zoom=15&size=800x300&markers=color:red%7C6.49018361998059,3.3025998785030137') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+/* Search bar centered */
+.search-bar {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Makes sure the search bar is above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;    
+}
+.autocompleteContainer {
+    --padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--padding);
+    padding: var(--padding);
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.24);
+    /*the container must be positioned relative:*/
+    width: 50vw;
+    position: relative;
+    /*display: inline-block;*/
+}
+.autocompleteContainer span {
+    margin-left: 20px;
+    font-size: 25px;
+    color: inherit;
+}
+input {
+    /*border: 0px solid transparent;*/
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+input[type=text] {
+    /*background-color: #f1f1f1;*/
+    background: transparent;  
+}
+input[type=submit] {
+    background-color: rgba(25, 115, 167, 1);
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 25px;
+    margin-right: 20px;
+    width: auto;
+}
+.autocomplete-items, .ui-autocomplete  {
+    position: absolute;
+  /*  border: 1px solid #d4d4d4;*/
+    border-bottom: none;
+    border-top: none;
+    z-index: 1;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 300px;
+    overflow: auto;
+    font-size: 1.6rem;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    padding-left: 80px;
+   /* border-bottom: 0px solid #d4d4d4;*/
+ }
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;  
+}
+.autocompleteContainer-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: rgb(25, 115, 167) !important;
+    color: #ffffff;    
+}
+
+/* City list (navigation) on the right */
+.citylist {
+    position: absolute;
+    right: 0;
+    top: 20px; /* Give some space from top */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px; 
+    margin-top: 70px;
+    margin-right: 20px;
+    width: 300px; /* Width of the list container */
+    height: 77%;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(25, 115, 167, 1);
+}
+.citylist h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.citylist ul {
+    list-style: none;
+    padding: 0;
+}
+.citylist li {
+    margin: 10px 0;
+}
+.citylist li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.citylist li a:hover {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+/* Quote of the day */
+#search-title {
+    position: absolute;
+    top: 35%;
+    padding: 10px;/*
+    bottom: 80px;*/
+    left: 35%;     
+    width: 100%;
+    transform: translateX(-50%);
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 0;
+}
+
+/************* Signup section *************************************/
+
+.container7 {        
+    width: 100vw;
+    height: 684px;
+   /* height: clamp(450px, 65vw, 785px);*/
+    /*background-color: rgba(25, 115, 167, 0.2);
+    box-shadow: 0 0 20px 2px rgba(13, 9, 235, 0.1);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+}
+.signup-box {
+    display: block;
+    width: 1000px;
+    height: 530px;
+    background-color: rgba(192, 46, 46, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.signup-box .h1NpNbutton-box {
+    width: clamp(80%, 90vw, 90%);
+    height: clamp(80%, 90vh, 90%);
+    background-color:rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;   
+}
+.h1NpNbutton-box h1 {
+    color: white;
+    text-align: center;
+}
+ .h1NpNbutton-box p {
+    color: white;
+    text-align: center;
+}
+.h1NpNbutton-box span {
+    color: white;
+    font-size: 3em;
+}
+.signup-box .h1NpNbutton-box .make-request-button {
+    background-color:red;
+    padding: 1rem 3rem;  
+}
+.h1NpNbutton-box .make-request-button:hover {
+    background-color:blue;  
+}
+
+/************* Service list section *************************************/
+
+#contentContainer {
+    height: auto;
+    background-color: rgba(25, 115, 167, 0.2);
+    padding-top: 50px;
+    padding-bottom: 50px;    
+}
+.service-category {
+    margin-bottom: 40px;
+}
+.service-category h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5px;
+    max-width: 1200px;
+    margin-left: 50px;
+  
+}
+.grid-item {
+    /*  background-color: #ffffff;
+    padding: 0px;
+  border: 1px solid #ddd;
+    border-radius: 8px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: black;
+}
+.grid-item:hover {
+    transform: translateY(-5px);    
+}
+.grid-item a {
+    text-decoration: none;
+    color: #333;    
+    font-size: 14px;
+}
+.grid-item a:hover {
+    color: #007BFF;
+}
+
+
+
+
+
+/************* State list section *************************************/
+
+.container8 {        
+    width: 100vw;
+   /* height: 484px;*/
+    height: auto;
+    /* height: clamp(40%, 50vh, 50%);*/
+    background-color: rgba(25, 115, 167, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;   
+}
+.statelist-box, .servicelist-box {
+    height: auto;
+    width: clamp(80%, 80vw, 90%);
+}
+.h4Nstatelist-box, .h4Nservicelist-box {
+    display: block;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    gap: 4%;
+    text-align: center;       
+}
+.h4Nstatelist-box .state-list, .service-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;  
+}
+
+.h4Nstatelist-box .state-list li {
+    list-style: none;
+    font-size: 1em;    
+}
+.h4Nservicelist-box .service-list li {
+    list-style: none;
+    font-size: 1em;    
+}
+.h4Nstatelist-box .state-list a {
+    color: rgb(34, 34, 34);    
+}
+.h4Nservicelist-box .service-list a {
+    color: rgb(34, 34, 34);    
+}
+.h4Nstatelist-box .state-list a:hover {
+    color: rgba(10, 146, 219, 1);    
+}
+.h4Nstatelist-box, .h4Nservicelist-box span {
+    color: rgba(10, 146, 219, 1);    
+}
+
+
+
+/************* footer section *************************************/
+
+.container9 {        
+    width: 100vw;
+    height: 284px;
+   /* height: clamp(80%, 80vh, 90%);
+    background-color: rgba(0, 0, 0, 0.2);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;      
+}
+.footer-box {
+    width: 100%;
+    height: inherit;
+    background-color:rgba(10, 146, 219, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+.container9 .footer-box li,a {
+    list-style: none;
+    font-size: small;
+    color: white;
+    line-height: 25px;
+}
+.footer-ul2 p {
+    color: white;
+    font-size: small;    
+}
+.footer-box li:hover {
+   background-color: rgba(255, 154, 0, 1);
+}
+.footer-box h5 {
+font-size: large;
+color: black; 
+padding-bottom: 15px; 
+}
+.Contact-list .footer-ul1, .footer-ul2, .footer-ul3 {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.Contact-list .footer-ul3 p {
+    color: white;
+    font-size: small;
+}
+
+
+/********** Copyright ************/
+
+.Copyright {
+    padding: 0 10px;
+    background-color:rgba(10, 146, 219, 1);
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.473);
+}
+
+.Copyright p {
+  font-size: small;
+}
+
+/******** MOBILE RESPONSIVENESS *****/
+
+@media (max-width: 600px) { 
+  /*  #navlist-container, */
+    #quote-of-the-day,
+    #Appliance-Repair,
+    #marketplace,
+    #relocation,
+    #autocare,
+    #techhub {
+        display: none;
+}
+.autocompleteContainer {
+    width: 90vw;   
+}
+.hero-section {
+    flex-direction: column;
+}
+.map-container {
+    min-height: 60vh; /* Adjusted map height */
+}
+.hero-section .mapNCitylist #search-title #pageTitle {
+    text-wrap: nowrap;
+    font-size: 1.8rem;
+    margin-left: 100px;
+ }
+/* Search bar centered */
+.search-bar {    
+    left: 50%;     
+}
+.search-bar input {
+    width: 80%; /* Adjust search bar width for smaller screens */
+    font-size: 1.2rem;
+}
+.citylist {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    max-height: 400px; /* Adjusted height for mobile */
+    box-shadow: none;
+}
+#contentContainer {
+    margin-top: 500px;  
+}
+      
+}
+
+
+
+
+    

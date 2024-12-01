@@ -1,0 +1,93 @@
+.abtServices {
+    height: fit-content;   
+}
+.abtServiceContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    line-height: 1.8;
+    padding-bottom: 10px;
+}
+.abtServices p {
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+.abtServices ul {
+    margin-left: 50px;
+}
+.cFaults li {
+    padding-bottom: 20px;
+}
+.abtServices h1, .abtServices h5 {
+    color: #333;
+    padding-top: 20px;
+}
+.abtServices a {
+    text-decoration: none;
+    color: #0066cc;
+}
+.abtServices a:hover {
+    text-decoration: underline;
+}
+.requestService {
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.requestService .requestlink {
+    font-size: large;
+}
+.requestService .requestlink:hover {
+    color: rgba(255, 154, 0, 1)
+}
+
+    /* FEATURED POSTS ****/
+
+.abtServiceContainer .featuredposts {    
+    display: flex;
+    flex-direction: row;    
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 10px;
+    background-color: #33333317;
+}
+.abtServiceContainer .featuredposts .post-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    margin: 10px 0px; 
+}
+.featuredposts .post-box h5{ 
+    font-size: small;
+    padding-top: 0px;
+}
+.featuredposts .postImg-Box {     
+    width: 200px;
+    aspect-ratio: 16/9;    
+}
+.featuredposts .postImg-Box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}  
+
+.comments-section input {
+    font-size: 12px;
+    border: 1px solid;
+    width: auto;
+    border-radius: 30px;
+    background-color: #0066cc1c;
+}
+.comments-section #comment {
+    padding: 10px;    
+}
+
+@media (max-width: 600px) {
+.abtServiceContainer {
+    margin-top: 90%;    
+}
+
+
+}

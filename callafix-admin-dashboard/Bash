@@ -1,0 +1,20 @@
+/admin-dashboard
+    /assets
+        /css
+        /js
+        /images
+    /components
+        /modal
+        /sidebar
+        /navbar
+    /pages
+        /home.html
+        /tasks.html
+        /scheduler.html
+        /crm.html
+        /invoices.html
+        /event.html
+    index.html
+    /utils
+        googleSheetAPI.js
+        dashboardUtils.js

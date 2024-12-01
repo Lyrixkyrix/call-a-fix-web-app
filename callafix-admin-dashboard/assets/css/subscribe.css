@@ -1,0 +1,72 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+.qckBtn-box {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.plan:hover {
+    transform: translateY(-10px);
+}
+.plan h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.plan p {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 20px;
+}
+.plan ul {
+    list-style-type: circle;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.plan ul li {
+    font-size: 14px;    
+    margin-bottom: 10px;
+}
+.pay-now {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pay-now:hover {
+    background-color: #2980b9;
+}
+@media (max-width: 768px) {
+    .qckBtn-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

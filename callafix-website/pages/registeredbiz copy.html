@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Sign-Up</title>
+
+    <link rel="stylesheet" href="/callafix-website/assets/css/bizsignup.css"> 
+    <link rel="stylesheet" href="/callafix-website/assets/css/backbutton.css">   
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+   
+
+</head>
+
+<body>  
+
+    <div class="container">
+        <h1>Registered Business SignUp</h1>
+
+        <div class="bck-btn">   
+            <a class="dropdown-btn"><span class="material-symbols-outlined">keyboard_double_arrow_left</span></a>
+            <div class="dropdown-content">
+              <a href="/callafix-website/index.html">Home</a>
+              <a href="/callafix-website/pages/signup.html">SignUp</a>
+              <!--  <a href="/callafix-website/pages/login.html">Login</a> -->
+            </div>
+          </div>
+
+        <br> <br>
+
+        <form id="registeredbiz" action="javascript:void(0);" method="POST" enctype="multipart/form-data">
+   
+          <!-- Step 1: Upload Documents -->
+    <fieldset id="step1">
+        <legend>Step 1: Upload Documents</legend>
+        <br>
+        <label for="myFileCAC">Upload CAC certificate:</label>
+        <input type="file" id="myFileCAC" name="myFileCAC" accept="image/*" required />
+        <br><br><br>
+        
+        <label for="myFile">Upload business photos (including logo):</label>
+        <input type="file" id="myFile" name="myFile" accept="image/*" required />
+        
+        <br><br><br>
+    </fieldset>
+                 <!-- Select Services -->
+                      <!-- Step 2: Service Categories -->
+            <fieldset id="step2">
+                <legend>Step 2: Select Services: <strong>Select as many that relates to the service(s) you render</strong></legend>
+
+                  <div class="cat-section">
+                    <!-- Category 1: Installation Services -->
+                    <div class="category">
+                      <h2>Installation Services</h2>
+              <label><input type="checkbox" name="services" value="Access Control System Installation"> Access Control System Installation</label>
+              <label><input type="checkbox" name="services" value="ACP Panel Installation"> ACP Panel Installation</label>
+              <label><input type="checkbox" name="services" value="Air Conditioning (AC) Installation"> Air Conditioning (AC) Installation</label>                       
+              <label><input type="checkbox" name="services" value="Artificial Grass Installation"> Artificial Grass Installation</label>
+              <label><input type="checkbox" name="services" value="AstroTurf Installation"> AstroTurf Installation</label>
+              <label><input type="checkbox" name="services" value="Automatic Gate Installation"> Automatic Gate Installation</label>
+              <label><input type="checkbox" name="services" value="Bathroom Sink Installation"> Bathroom Sink Installation</label>
+              <label><input type="checkbox" name="services" value="Battery Charge Controllers"> Battery Charge Controllers</label>
+              <label><input type="checkbox" name="services" value="Battery Specialist"> Battery Specialist</label>
+              <label><input type="checkbox" name="services" value="Cabinet Installation"> Cabinet Installation</label>
+              <label><input type="checkbox" name="services" value="Car Spare Part Sales"> Car Spare Part Sales</label>
+              <label><input type="checkbox" name="services" value="CCTV Camera Installation"> CCTV Camera Installation</label>
+              <label><input type="checkbox" name="services" value="Ceiling Installation"> Ceiling Installation</label>
+              <label><input type="checkbox" name="services" value="Cladding Suppliers"> Cladding Suppliers</label>
+              <label><input type="checkbox" name="services" value="Cold Room Construction"> Cold Room Construction</label>
+              <label><input type="checkbox" name="services" value="Curtain Installation"> Curtain Installation</label>
+              <label><input type="checkbox" name="services" value="Dash Camera Installation"> Dash Camera Installation</label>
+              <label><input type="checkbox" name="services" value="Diesel Generator Installation"> Diesel Generator Installation</label>
+              <label><input type="checkbox" name="services" value="Dish Washer Installation"> Dish Washer Installation</label>
+              <label><input type="checkbox" name="services" value="Door Installation"> Door Installation</label>
+              <label><input type="checkbox" name="services" value="Doorbell Installation"> Doorbell Installation</label>
+              <label><input type="checkbox" name="services" value="DStv Installation"> DStv Installation</label>
+              <label><input type="checkbox" name="services" value="DVD Mount Installation"> DVD Mount Installation</label>
+              <label><input type="checkbox" name="services" value="Electric Fence Installation"> Electric Fence Installation</label>
+              <label><input type="checkbox" name="services" value="Fire Alarm Installation"> Fire Alarm Installation</label>
+              <label><input type="checkbox" name="services" value="Floor Installation"> Floor Installation</label>
+              <label><input type="checkbox" name="services" value="Frameless Glass Installation"> Frameless Glass Installation</label>
+              <label><input type="checkbox" name="services" value="Generator Installation"> Generator Installation</label>
+              <label><input type="checkbox" name="services" value="Generator Rental"> Generator Rental</label>
+              <label><input type="checkbox" name="services" value="GOtv Installation"> GOtv Installation</label>
+              <label><input type="checkbox" name="services" value="Heating System Installation"> Heating System Installation</label>
+              <label><input type="checkbox" name="services" value="Home Appliances Installation"> Home Appliances Installation</label>
+              <label><input type="checkbox" name="services" value="Home Security Alarm Installation"> Home Security Alarm Installation</label>
+              <label><input type="checkbox" name="services" value="Home Security System Installation"> Home Security System Installation</label>
+              <label><input type="checkbox" name="services" value="Ice Block Making Machine Construction"> Ice Block Making Machine Construction</label>
+              <label><input type="checkbox" name="services" value="Intercom Installation"> Intercom Installation</label>
+              <label><input type="checkbox" name="services" value="Interlocking Floor Installation"> Interlocking Floor Installation</label>
+              <label><input type="checkbox" name="services" value="Internet Wiring Installation"> Internet Wiring Installation</label>
+              <label><input type="checkbox" name="services" value="Inverter Installation"> Inverter Installation</label>
+              <label><input type="checkbox" name="services" value="Inverter Sales"> Inverter Sales</label>
+              <label><input type="checkbox" name="services" value="Kitchen Sink Installation"> Kitchen Sink Installation</label>
+              <label><input type="checkbox" name="services" value="Led Signage Installation"> Led Signage Installation</label>
+              <label><input type="checkbox" name="services" value="Lock Installation"> Lock Installation</label>
+              <label><input type="checkbox" name="services" value="Mast/Tower Fabrication and Installation"> Mast/Tower Fabrication and Installation</label>
+              <label><input type="checkbox" name="services" value="Mercedes Benz Spare Part Sales"> Mercedes Benz Spare Part Sales</label>
+              <label><input type="checkbox" name="services" value="Motion Sensor Installation"> Motion Sensor Installation</label>
+              <label><input type="checkbox" name="services" value="MultiTV (Joy TV)"> MultiTV (Joy TV)</label>
+              <label><input type="checkbox" name="services" value="MyTv Installation"> MyTv Installation</label>
+              <label><input type="checkbox" name="services" value="Nilesat"> Nilesat</label>
+              <label><input type="checkbox" name="services" value="Plasterboard Ceiling Installation"> Plasterboard Ceiling Installation</label>
+              <label><input type="checkbox" name="services" value="Plasterboard Wall Installation"> Plasterboard Wall Installation</label>
+              <label><input type="checkbox" name="services" value="Prepaid Meter Installation"> Prepaid Meter Installation</label>
+              <label><input type="checkbox" name="services" value="Pumping Machine Installation"> Pumping Machine Installation</label>
+              <label><input type="checkbox" name="services" value="PVC Ceiling Installation"> PVC Ceiling Installation</label>
+              <label><input type="checkbox" name="services" value="Refrigerator Installation"> Refrigerator Installation</label>
+              <label><input type="checkbox" name="services" value="Satellite Dish Installation"> Satellite Dish Installation</label>
+              <label><input type="checkbox" name="services" value="Scroll Pannel Display Sign Installation"> Scroll Pannel Display Sign Installation</label>
+              <label><input type="checkbox" name="services" value="Signage Installation"> Signage Installation</label>
+              <label><input type="checkbox" name="services" value="Sink Installation"> Sink Installation</label>
+              <label><input type="checkbox" name="services" value="Solar Charge Controllers"> Solar Charge Controllers</label>
+              <label><input type="checkbox" name="services" value="Solar Panel Installation"> Solar Panel Installation</label>
+              <label><input type="checkbox" name="services" value="Solar Panel Sales"> Solar Panel Sales</label>
+              <label><input type="checkbox" name="services" value="Sound System Installation"> Sound System Installation</label>
+              <label><input type="checkbox" name="services" value="Sprinkler and Irrigation System Installation"> Sprinkler and Irrigation System Installation</label>
+              <label><input type="checkbox" name="services" value="Stainless Steel Handrail Installation"> Stainless Steel Handrail Installation</label>
+              <label><input type="checkbox" name="services" value="StarTimes Installation"> StarTimes Installation</label>
+              <label><input type="checkbox" name="services" value="Sump Pump Installation"> Sump Pump Installation</label>
+              <label><input type="checkbox" name="services" value="Tile Installation"> Tile Installation</label>
+              <label><input type="checkbox" name="services" value="Toilet Cubicle Sales and Installation"> Toilet Cubicle Sales and Installation</label>
+              <label><input type="checkbox" name="services" value="Toilet Installation"> Toilet Installation</label>
+              <label><input type="checkbox" name="services" value="TV Mount Installation"> TV Mount Installation</label>
+              <label><input type="checkbox" name="services" value="UPS System Installation"> UPS System Installation</label>
+              <label><input type="checkbox" name="services" value="Video Doorbell Installation"> Video Doorbell Installation</label>
+              <label><input type="checkbox" name="services" value="Video Surveillance (CCTV)"> Video Surveillance (CCTV)</label>
+              <label><input type="checkbox" name="services" value="Wallpaper Installation"> Wallpaper Installation</label>
+              <label><input type="checkbox" name="services" value="Washing Machine Installation"> Washing Machine Installation</label>
+              <label><input type="checkbox" name="services" value="Water (Overhead) Tank Installation"> Water (Overhead) Tank Installation</label>
+              <label><input type="checkbox" name="services" value="Water Fountain Installation"> Water Fountain Installation</label>
+              <label><input type="checkbox" name="services" value="Water Heater Installation and Replacement"> Water Heater Installation and Replacement</label>
+              <label><input type="checkbox" name="services" value="Welding"> Welding</label>
+              <label><input type="checkbox" name="services" value="Window Blind Installations"> Window Blind Installations</label>
+              <label><input type="checkbox" name="services" value="Window Installation"> Window Installation</label>
+              <label><input type="checkbox" name="services" value="Window Screen Installation and Replacement"> Window Screen Installation and Replacement</label>
+              <label><input type="checkbox" name="services" value="Window Tinting"> Window Tinting</label>
+      </div>
+              <!-- Category 2: Repair Services -->
+              <div class="category">
+                <h2>Repair Services</h2>
+              <label><input type="checkbox" name="services" value="Air Conditioning (AC) Gas Refill"> Air Conditioning (AC) Gas Refill</label>
+              <label><input type="checkbox" name="services" value="Air Conditioning (AC) Repair"> Air Conditioning (AC) Repair</label>
+              <label><input type="checkbox" name="services" value="Artificial Grass Repair"> Artificial Grass Repair</label>
+              <label><input type="checkbox" name="services" value="Automobile Mechanic"> Automobile Mechanic</label>
+              <label><input type="checkbox" name="services" value="Borehole Repair and Maintenance"> Borehole Repair and Maintenance</label>
+              <label><input type="checkbox" name="services" value="Cabinet Repair"> Cabinet Repair</label>
+              <label><input type="checkbox" name="services" value="Camera Repair"> Camera Repair</label>
+              <label><input type="checkbox" name="services" value="Car Repair"> Car Repair</label>
+              <label><input type="checkbox" name="services" value="Car Roof Lining Repair and Replacement"> Car Roof Lining Repair and Replacement</label>
+              <label><input type="checkbox" name="services" value="Car Seat Repair"> Car Seat Repair</label>
+              <label><input type="checkbox" name="services" value="Car Service (Maintenance)"> Car Service (Maintenance)</label>
+              <label><input type="checkbox" name="services" value="Car Stereo Repair"> Car Stereo Repair</label>
+              <label><input type="checkbox" name="services" value="Coffee Machine Repair"> Coffee Machine Repair</label>
+              <label><input type="checkbox" name="services" value="Computer Repair"> Computer Repair</label>
+              <label><input type="checkbox" name="services" value="Diesel Generator Repair"> Diesel Generator Repair</label>
+              <label><input type="checkbox" name="services" value="Dish Washer Repair"> Dish Washer Repair</label>
+              <label><input type="checkbox" name="services" value="Door Repair"> Door Repair</label>
+              <label><input type="checkbox" name="services" value="Drone Repair"> Drone Repair</label>
+              <label><input type="checkbox" name="services" value="DStv Repair and Maintenance"> DStv Repair and Maintenance</label>
+              <label><input type="checkbox" name="services" value="Electric Sewing Machine Repair"> Electric Sewing Machine Repair</label>
+              <label><input type="checkbox" name="services" value="Electrical Wiring And Repair"> Electrical Wiring And Repair</label>
+              <label><input type="checkbox" name="services" value="Electronic Machine Repair"> Electronic Machine Repair</label>
+              <label><input type="checkbox" name="services" value="Fan Repair"> Fan Repair</label>
+              <label><input type="checkbox" name="services" value="Furniture Repair"> Furniture Repair</label>
+              <label><input type="checkbox" name="services" value="Generator Repair"> Generator Repair</label>
+              <label><input type="checkbox" name="services" value="Heating System Repair and Maintenance"> Heating System Repair and Maintenance</label>
+              <label><input type="checkbox" name="services" value="Heavy Equipment Repair"> Heavy Equipment Repair</label>
+              <label><input type="checkbox" name="services" value="Inverter Repair"> Inverter Repair</label>
+              <label><input type="checkbox" name="services" value="Laptop Repair"> Laptop Repair</label>
+              <label><input type="checkbox" name="services" value="Lock Repair"> Lock Repair</label>
+              <label><input type="checkbox" name="services" value="Metalwork"> Metalwork</label>
+              <label><input type="checkbox" name="services" value="Mobile Screen Replacement"> Mobile Screen Replacement</label>
+              <label><input type="checkbox" name="services" value="Phone Repair"> Phone Repair</label>
+              <label><input type="checkbox" name="services" value="Projector Repair"> Projector Repair</label>
+              <label><input type="checkbox" name="services" value="Pumping Machine Repair and Maintenance"> Pumping Machine Repair and Maintenance</label>
+              <label><input type="checkbox" name="services" value="Refrigerator (Fridge) Gas Refill"> Refrigerator (Fridge) Gas Refill</label>
+              <label><input type="checkbox" name="services" value="Refrigerator Repair Services"> Refrigerator Repair Services</label>
+              <label><input type="checkbox" name="services" value="Roof Repair and Maintenance"> Roof Repair and Maintenance</label>
+              <label><input type="checkbox" name="services" value="Satellite Dish Repair"> Satellite Dish Repair</label>
+              <label><input type="checkbox" name="services" value="Solar Panel Repair"> Solar Panel Repair</label>
+              <label><input type="checkbox" name="services" value="Sound System Repair"> Sound System Repair</label>
+              <label><input type="checkbox" name="services" value="Sump Pump Repair and Maintenance"> Sump Pump Repair and Maintenance</label>
+              <label><input type="checkbox" name="services" value="Swimming Pool Repair"> Swimming Pool Repair</label>
+              <label><input type="checkbox" name="services" value="Tablet Repair"> Tablet Repair</label>
+              <label><input type="checkbox" name="services" value="Tile Repair and Replacement"> Tile Repair and Replacement</label>
+              <label><input type="checkbox" name="services" value="Truck Repair"> Truck Repair</label>
+              <label><input type="checkbox" name="services" value="TV Repair Services"> TV Repair Services</label>
+              <label><input type="checkbox" name="services" value="Vehicle Electrical Fault Repair"> Vehicle Electrical Fault Repair</label>
+              <label><input type="checkbox" name="services" value="Vehicle Upholstery"> Vehicle Upholstery</label>
+              <label><input type="checkbox" name="services" value="Vehicle/Car Air Conditioning (AC) Repair"> Vehicle/Car Air Conditioning (AC) Repair</label>
+              <label><input type="checkbox" name="services" value="Video Camera Repair"> Video Camera Repair</label>
+              <label><input type="checkbox" name="services" value="Wallpaper Repair or Removal"> Wallpaper Repair or Removal</label>
+              <label><input type="checkbox" name="services" value="Washing Machine Repair"> Washing Machine Repair</label>
+              <label><input type="checkbox" name="services" value="Window Repair and Replacement"> Window Repair and Replacement</label>
+              </div>                
+        </div>
+        </fieldset>
+                  <!-- Step 3: Service Categories -->
+        <fieldset id="step3">
+                  <legend>Step 3: Select Services: <strong>Select as many that relates to the service(s) you render</strong></legend>
+
+                  <div class="cat-section">
+                    <!-- Category 3: Home improvement -->
+                    <div class="category">
+                      <h2>Home improvement</h2>
+              <label><input type="checkbox" name="services" value="3D Modeling and CAD Services"> 3D Modeling and CAD Services</label>
+              <label><input type="checkbox" name="services" value="Aluminium Door Installation"> Aluminium Door Installation</label>
+              <label><input type="checkbox" name="services" value="Aluminium Door Sales"> Aluminium Door Sales</label>
+              <label><input type="checkbox" name="services" value="Aluminium Window Installation"> Aluminium Window Installation</label>
+              <label><input type="checkbox" name="services" value="Aluminium Window Sales"> Aluminium Window Sales</label>
+              <label><input type="checkbox" name="services" value="Aluminum Work and Repair"> Aluminum Work and Repair</label>
+              <label><input type="checkbox" name="services" value="Apartment Relocation Services"> Apartment Relocation Services</label>
+              <label><input type="checkbox" name="services" value="Aquarium Services"> Aquarium Services</label>
+              <label><input type="checkbox" name="services" value="Architectural Services"> Architectural Services</label>
+              <label><input type="checkbox" name="services" value="Artificial Grass Replacement"> Artificial Grass Replacement</label>
+              <label><input type="checkbox" name="services" value="Artificial Grass Sales"> Artificial Grass Sales</label>
+              <label><input type="checkbox" name="services" value="Asbestos Removal"> Asbestos Removal</label>
+              <label><input type="checkbox" name="services" value="Bathroom Renovation"> Bathroom Renovation</label>
+              <label><input type="checkbox" name="services" value="Bill Of Quantities (BOQ)"> Bill Of Quantities (BOQ)</label>
+              <label><input type="checkbox" name="services" value="Borehole Drilling"> Borehole Drilling</label>
+              <label><input type="checkbox" name="services" value="Borehole Drilling Geophysical Survey"> Borehole Drilling Geophysical Survey</label>
+              <label><input type="checkbox" name="services" value="Borehole Maintenance"> Borehole Maintenance</label>
+              <label><input type="checkbox" name="services" value="Damp Proofing"> Damp Proofing</label>
+              <label><input type="checkbox" name="services" value="Disposal and Waste Management Services"> Disposal and Waste Management Services</label>
+              <label><input type="checkbox" name="services" value="Drywall Partition"> Drywall Partition</label>
+              <label><input type="checkbox" name="services" value="Epoxy / 3D Floor Interlock"> Epoxy / 3D Floor Interlock</label>
+              <label><input type="checkbox" name="services" value="Exterior Decoration"> Exterior Decoration</label>
+              <label><input type="checkbox" name="services" value="Floor Polishing"> Floor Polishing</label>
+              <label><input type="checkbox" name="services" value="Floor Replacement"> Floor Replacement</label>
+              <label><input type="checkbox" name="services" value="Furniture Assembly"> Furniture Assembly</label>
+              <label><input type="checkbox" name="services" value="General Carpentry"> General Carpentry</label>
+              <label><input type="checkbox" name="services" value="Glass Partition"> Glass Partition</label>
+              <label><input type="checkbox" name="services" value="Home Renovation"> Home Renovation</label>
+              <label><input type="checkbox" name="services" value="House Painting"> House Painting</label>
+              <label><input type="checkbox" name="services" value="Interior Decoration"> Interior Decoration</label>
+              <label><input type="checkbox" name="services" value="Interior Design"> Interior Design</label>
+              <label><input type="checkbox" name="services" value="Kitchen Renovation"> Kitchen Renovation</label>
+              <label><input type="checkbox" name="services" value="Marble Restoration"> Marble Restoration</label>
+              <label><input type="checkbox" name="services" value="Mould Inspection and Removal"> Mould Inspection and Removal</label>
+              <label><input type="checkbox" name="services" value="Office Partitioning"> Office Partitioning</label>
+              <label><input type="checkbox" name="services" value="Outdoor Decoration"> Outdoor Decoration</label>
+              <label><input type="checkbox" name="services" value="Outdoor Landscaping and Design"> Outdoor Landscaping and Design</label>
+              <label><input type="checkbox" name="services" value="POP Wall Screeding"> POP Wall Screeding</label>
+              <label><input type="checkbox" name="services" value="Soakaway (Septic Tank) Construction"> Soakaway (Septic Tank) Construction</label>
+              <label><input type="checkbox" name="services" value="Sound Proofing"> Sound Proofing</label>
+              <label><input type="checkbox" name="services" value="Swimming Pool Construction"> Swimming Pool Construction</label>
+              <label><input type="checkbox" name="services" value="Swimming Pool Maintenance"> Swimming Pool Maintenance</label>
+              <label><input type="checkbox" name="services" value="Swimming Pool Renovation"> Swimming Pool Renovation</label>
+              <label><input type="checkbox" name="services" value="Toilet Replacement"> Toilet Replacement</label>
+              <label><input type="checkbox" name="services" value="Tree Planting"> Tree Planting</label>
+              <label><input type="checkbox" name="services" value="Tree Removal"> Tree Removal</label>
+              <label><input type="checkbox" name="services" value="Tree Trimming and Maintenance"> Tree Trimming and Maintenance</label>
+              <label><input type="checkbox" name="services" value="Wall Cladding"> Wall Cladding</label>
+              <label><input type="checkbox" name="services" value="Wall Painting and Screeding"> Wall Painting and Screeding</label>
+              <label><input type="checkbox" name="services" value="Warehousing Services"> Warehousing Services</label>
+              <label><input type="checkbox" name="services" value="Waste Collection"> Waste Collection</label>
+              <label><input type="checkbox" name="services" value="Water Tanker Supply"> Water Tanker Supply</label>
+              <label><input type="checkbox" name="services" value="Water Treatment"> Water Treatment</label>
+              <label><input type="checkbox" name="services" value="Waterproofing"> Waterproofing</label>
+                  </div>
+
+                      <!-- Category 4: Cleaning & Fumigation services -->
+                      <div class="category">
+                          <h2>Cleaning & Fumigation services</h2>
+                  <label><input type="checkbox" name="services" value="After Party Cleaning"> After Party Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Apartment Cleaning"> Apartment Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Bed Bug Extermination"> Bed Bug Extermination</label>
+                  <label><input type="checkbox" name="services" value="Carpet Cleaning"> Carpet Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Commercial Cleaning"> Commercial Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Deep House Cleaning"> Deep House Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Domestic Cleaning"> Domestic Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Dry Cleaning"> Dry Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Fumigation"> Fumigation</label>
+                  <label><input type="checkbox" name="services" value="Furniture Cleaning"> Furniture Cleaning</label>
+                  <label><input type="checkbox" name="services" value="General Cleaning Services"> General Cleaning Services</label>
+                  <label><input type="checkbox" name="services" value="Gutter Cleaning"> Gutter Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Hotel Cleaning"> Hotel Cleaning</label>
+                  <label><input type="checkbox" name="services" value="House Cleaning Services"> House Cleaning Services</label>
+                  <label><input type="checkbox" name="services" value="Industrial Cleaning"> Industrial Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Janitorial Cleaning"> Janitorial Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Move In Cleaning"> Move In Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Move Out Cleaning"> Move Out Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Office Cleaning"> Office Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Pest Control Services"> Pest Control Services</label>
+                  <label><input type="checkbox" name="services" value="Post Construction Cleaning"> Post Construction Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Renovation Cleaning"> Renovation Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Residential Cleaning"> Residential Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Roof Cleaning"> Roof Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Rug Cleaning"> Rug Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Skyscraper Window Cleaning"> Skyscraper Window Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Soakaway (Septic Tank) Cleaning"> Soakaway (Septic Tank) Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Swimming Pool Cleaning"> Swimming Pool Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Termite Inspection"> Termite Inspection</label>
+                  <label><input type="checkbox" name="services" value="Upholstery Cleaning"> Upholstery Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Water Damage Cleanup and Restoration"> Water Damage Cleanup and Restoration</label>
+                  <label><input type="checkbox" name="services" value="Water Tank Cleaning"> Water Tank Cleaning</label>
+                  <label><input type="checkbox" name="services" value="Window Cleaning"> Window Cleaning</label>
+  </div>
+  </div>                
+        </fieldset>
+                  <!-- Step 4: Service Categories -->
+        <fieldset id="step4">
+                  <legend>Step 4: Select Services: <strong>Select as many that relates to the service(s) you render</strong></legend>
+
+                  <div class="cat-section">
+                      <!-- Category 5: IT Services -->
+                      <div class="category">
+                          <h2>IT Services</h2>
+                  <label><input type="checkbox" name="services" value="Android Development"> Android Development</label>
+                  <label><input type="checkbox" name="services" value="Animation"> Animation</label>
+                  <label><input type="checkbox" name="services" value="Blog Development"> Blog Development</label>
+                  <label><input type="checkbox" name="services" value="Blog Writing"> Blog Writing</label>
+                  <label><input type="checkbox" name="services" value="Content Writing"> Content Writing</label>
+                  <label><input type="checkbox" name="services" value="Desktop Application Development"> Desktop Application Development</label>
+                  <label><input type="checkbox" name="services" value="Digital Marketing"> Digital Marketing</label>
+                  <label><input type="checkbox" name="services" value="Domain Name Registration"> Domain Name Registration</label>
+                  <label><input type="checkbox" name="services" value="E-commerce Web Development"> E-commerce Web Development</label>
+                  <label><input type="checkbox" name="services" value="E-payment Integration Services"> E-payment Integration Services</label>
+                  <label><input type="checkbox" name="services" value="Graphic Design"> Graphic Design</label>
+                  <label><input type="checkbox" name="services" value="iOS Development"> iOS Development</label>
+                  <label><input type="checkbox" name="services" value="IT Services"> IT Services</label>
+                  <label><input type="checkbox" name="services" value="IT Support"> IT Support</label>
+                  <label><input type="checkbox" name="services" value="IT Training"> IT Training</label>
+                  <label><input type="checkbox" name="services" value="LinkedIn Optimization Expert"> LinkedIn Optimization Expert</label>
+                  <label><input type="checkbox" name="services" value="Logo Design"> Logo Design</label>
+                  <label><input type="checkbox" name="services" value="Marketing"> Marketing</label>
+                  <label><input type="checkbox" name="services" value="Mobile Application Development"> Mobile Application Development</label>
+                  <label><input type="checkbox" name="services" value="Search Engine Optimization (SEO)"> Search Engine Optimization (SEO)</label>
+                  <label><input type="checkbox" name="services" value="Social Media Marketing"> Social Media Marketing</label>
+                  <label><input type="checkbox" name="services" value="Software Development"> Software Development</label>
+                  <label><input type="checkbox" name="services" value="UI Design"> UI Design</label>
+                  <label><input type="checkbox" name="services" value="Web Development Training"> Web Development Training</label>
+                  <label><input type="checkbox" name="services" value="Web Hosting"> Web Hosting</label>
+                  <label><input type="checkbox" name="services" value="Web Management and Maintenance"> Web Management and Maintenance</label>
+                  <label><input type="checkbox" name="services" value="Website Design"> Website Design</label>
+                  <label><input type="checkbox" name="services" value="Website Development"> Website Development</label>
+                  <label><input type="checkbox" name="services" value="WordPress Website Development"> WordPress Website Development</label>
+                      </div>
+                      
+                      <!-- Category 6: Building & Construction Services -->
+                      <div class="category">
+                        <h2>Building & Construction Services</h2>
+                <label><input type="checkbox" name="services" value="Building Inspection Services"> Building Inspection Services</label>
+                <label><input type="checkbox" name="services" value="Building Plan Permit/Approval"> Building Plan Permit/Approval</label>
+                <label><input type="checkbox" name="services" value="Building Services"> Building Services</label>
+                <label><input type="checkbox" name="services" value="Demolition Permit/Approval"> Demolition Permit/Approval</label>
+                <label><input type="checkbox" name="services" value="Demolition Services"> Demolition Services</label>
+                <label><input type="checkbox" name="services" value="Facility Management"> Facility Management</label>
+                <label><input type="checkbox" name="services" value="Land Leveling and Grading"> Land Leveling and Grading</label>
+                <label><input type="checkbox" name="services" value="Land Surveying"> Land Surveying</label>
+                <label><input type="checkbox" name="services" value="Land Title Registration"> Land Title Registration</label>
+                <label><input type="checkbox" name="services" value="Mechanical and Electrical Drawings (M&E\/MEP)"> Mechanical and Electrical Drawings (M&E\/MEP)</label>
+                <label><input type="checkbox" name="services" value="New Home Construction"> New Home Construction</label>
+                <label><input type="checkbox" name="services" value="Piling Services"> Piling Services</label>
+                <label><input type="checkbox" name="services" value="Property Management"> Property Management</label>
+                <label><input type="checkbox" name="services" value="Quantity Survey"> Quantity Survey</label>
+                <label><input type="checkbox" name="services" value="Real Estate Agent Services"> Real Estate Agent Services</label>
+                <label><input type="checkbox" name="services" value="Scaffolding"> Scaffolding</label>
+                <label><input type="checkbox" name="services" value="Scaffolding Equipment"> Scaffolding Equipment</label>
+                <label><input type="checkbox" name="services" value="Soil Testing"> Soil Testing</label>
+                <label><input type="checkbox" name="services" value="Stamped Concrete Floor"> Stamped Concrete Floor</label>
+                <label><input type="checkbox" name="services" value="Statistical Data Analysis"> Statistical Data Analysis</label>
+                <label><input type="checkbox" name="services" value="Structural Drawing"> Structural Drawing</label>
+                <label><input type="checkbox" name="services" value="Structural Engineering Services"> Structural Engineering Services</label>
+                <label><input type="checkbox" name="services" value="Town Planning"> Town Planning</label>
+                      </div>                  
+      </div>
+        </fieldset>
+                  <!-- Step 5: Service Categories -->
+        <fieldset id="step5">
+                  <legend>Step 5: Select Services: <strong>Select as many that relates to the service(s) you render</strong></legend>
+
+                      <div class="cat-section">
+                      <!-- Category 7: Relocation service -->
+                      <div class="category">
+                    <h2>Relocation service</h2>
+          <label><input type="checkbox" name="services" value="Drop-off Delivery Services"> Drop-off Delivery Services</label>
+          <label><input type="checkbox" name="services" value="E-commerce Logistics Services"> E-commerce Logistics Services</label>
+          <label><input type="checkbox" name="services" value="Moving Services"> Moving Services</label>
+          <label><input type="checkbox" name="services" value="Packing and Unpacking Services"> Packing and Unpacking Services</label>
+          <label><input type="checkbox" name="services" value="Pickup Service"> Pickup Service</label>
+          <label><input type="checkbox" name="services" value="Truck Hire"> Truck Hire</label>
+              </div>
+              </div>
+        </fieldset>  
+                 <!-- Step 6: Registered Business details -->                        
+            <fieldset id="step6" style="display:none;">
+                <legend>Step 6: Registered Business Details</legend>
+                        
+            <label for="name">Business Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="age">How old is the business?</label>
+            <input type="number" id="age" name="age" required>
+                    <br>  <br>
+            <label for="count">Number of employees?</label>
+            <input type="number" id="count" name="count" required>
+                    <br> <br>
+            <label for="states">Business Location:</label>                
+            <select name="states" id="states" required>  
+            <option value="" disabled selected hidden>select location</option>
+            <option value="Abia">Abia</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Adamawa">Adamawa</option>
+            <option value="Akwa Ibom">Akwa Ibom</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Bauchi">Bauchi</option>
+            <option value="Bayelsa">Bayelsa</option>
+            <option value="Benue">Benue</option>
+            <option value="Borno">Borno</option>
+            <option value="Cross River">Cross River</option>
+            <option value="Delta">Delta</option>
+            <option value="Ebonyi">Ebonyi</option>
+            <option value="Edo">Edo</option>
+            <option value="Ekiti">Ekiti</option>
+            <option value="Enugu">Enugu</option>
+            <option value="Gombe">Gombe</option>
+            <option value="Imo">Imo</option>
+            <option value="Jigawa">Jigawa</option>
+            <option value="Kaduna">Kaduna</option>
+            <option value="Kano">Kano</option>
+            <option value="Katsina">Katsina</option>
+            <option value="Kebbi">Kebbi</option>
+            <option value="Kogi">Kogi</option>
+            <option value="Kwara">Kwara</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Nasarawa">Nasarawa</option>
+            <option value="Niger">Niger</option>
+            <option value="Ogun">Ogun</option>
+            <option value="Ondo">Ondo</option>
+            <option value="Osun">Osun</option>
+            <option value="Oyo">Oyo</option>
+            <option value="Plateau">Plateau</option>
+            <option value="Rivers">Rivers</option>
+            <option value="Sokoto">Sokoto</option>
+            <option value="Taraba">Taraba</option>
+            <option value="Yobe">Yobe</option>
+            <option value="Zamfara">Zamfara</option>   
+            </select>
+
+            <label for="lgarea">Business Address (include LGA):</label>
+            <input type="text" id="lgarea" placeholder="Enter your address..." name="lgarea" required>
+
+</fieldset>
+
+             <!-- Step 7: Logic details -->                        
+             <fieldset id="step7" style="display:none;">
+              <legend>Step 7: Email Address</legend>
+                      
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required>
+              <input type="hidden" name="source" value="signupform" />  
+        </fieldset>
+
+               <!-- Navigation Buttons -->
+            <div class="form-footer">
+                <button type="button" id="prevBtn" style="display:none;" onclick="moveStep(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="moveStep(1)">Next</button>
+                <button type="button" id="submitBtn" onclick="submitForm(event)" style="display:none;">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="/callafix-website/assets/js/signuptester.js"></script>
+   
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+@media (max-width: 600px) { 
+/* Style for the mobile menu */
+#header #navlist-container ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+    gap: 0;  
+    z-index: 1;
+}/*
+#menuList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}   */
+#menuList {
+    display: none; /* Hide menu items by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}  
+#menuList li {
+    margin: 10px 0;
+    text-align: center;
+}  
+#menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}  
+#menuList.show {
+    display: flex; /* Show the menu items when the toggle button is clicked */
+}
+}
