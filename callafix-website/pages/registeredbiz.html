@@ -31,7 +31,7 @@
 
         <br> <br>
 
-        <form id="registeredbiz" action="https://script.google.com/macros/s/AKfycbyHFQeDW3y5LM3HTc6S0JbQdtfiAz3LKYeWeU0XNQGSTE-DjlupIeEpSF7SHIskYLQp5g/exec" method="POST" enctype="multipart/form-data">
+        <form id="registeredbiz" action="https://script.google.com/macros/s/AKfycbzsC108phivXfSSP6HuxqEfO9rv6iaAMp2EKU87mD-SmRaJDuSh0JNji8D9uZ8TL862Ew/exec" method="POST" enctype="multipart/form-data">
   
 
           <!-- Step 1: Upload Documents -->
@@ -390,23 +390,23 @@
               </div>
         </fieldset>  
                  <!-- Step 6: Registered Business details -->                        
-            <fieldset id="step6" style="display:none;">
+        <fieldset id="step6" style="display:none;">
                 <legend>Step 6: Registered Business Details</legend>
                         
             <label for="name">Business Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required />
 
             <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required>
+            <input type="text" id="phone" name="phone" required />
 
             <label for="age">How old is the business?</label>
-            <input type="number" id="age" name="age" required>
+            <input type="number" id="age" name="age" required />
                     <br>  <br>
             <label for="count">Number of employees?</label>
-            <input type="number" id="count" name="count" required>
+            <input type="number" id="count" name="count" required />
                     <br> <br>
             <label for="states">Business Location:</label>                
-            <select name="states" id="states" required>  
+            <select name="states" id="states" required />  
             <option value="" disabled selected hidden>select location</option>
             <option value="Abia">Abia</option>
             <option value="Abuja">Abuja</option>
@@ -448,24 +448,24 @@
             </select>
 
             <label for="lgarea">Business Address (include LGA):</label>
-            <input type="text" id="lgarea" placeholder="Enter your address..." name="lgarea" required>
+            <input type="text" id="lgarea" placeholder="Enter your address..." name="lgarea" required />
 
-</fieldset>
+        </fieldset>
 
              <!-- Step 7: Logic details -->                        
         <fieldset id="step7" style="display:none;">
               <legend>Step 7: Email Address</legend>
                       
               <label for="email">Email Address:</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" required />
               <input type="hidden" name="source" value="signupform" />  
         </fieldset>
            <!-- Navigation Buttons -->
         <div class="form-footer">
-          <button type="button" id="prevBtn" style="display:none;" onclick="moveStep(-1)">Previous</button>
-          <button type="button" id="nextBtn" onclick="moveStep(1)">Next</button>
-          <button type="button" id="submitBtn" style="display:none;" onclick="submitForm(event)">Submit</button>
-      </div>
+            <button type="button" id="prevBtn" style="display:none;" onclick="moveStep(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="moveStep(1)">Next</button>
+            <button type="button" id="submitBtn" style="display:none;" onclick="submitForm(event)">Submit</button>
+        </div>
       
       <!-- Error message for validation -->
       <div id="error-message" style="color: red;"></div>
